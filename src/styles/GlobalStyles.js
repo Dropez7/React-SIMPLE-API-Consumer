@@ -27,6 +27,11 @@ export default createGlobalStyle`
         color: #fff;
         border-radius: 5px;
         font-weight: bold;
+        transition: all 300ms;
+
+        &:hover {
+            filter: brightness(1.1);
+        }
     }
 
     a {
@@ -40,16 +45,20 @@ export default createGlobalStyle`
 
     body .Toastify .Toastify__toast-container .Toastify__toast--success {
         background: ${colors.success};
+        height: 10px;
+        color: #fff;
     }
 
     body .Toastify .Toastify__toast-container .Toastify__toast--error {
         background: ${colors.error};
+        height: 10px;
+        color: #fff;
     }
 
     `;
 
 export const Container = styled.section`
-    max-width: 360px;
+    max-width: 480px;
     background-color: #fff;
     margin: 30px auto;
     padding: 20px;

@@ -6,9 +6,9 @@ import rootReducer from './rootReducer';
 export default function reducers() {
 	const persistedReducer = persistReducer(
 		{
-			key: 'ReactBase',
+			key: 'CONSUMO-API',
 			storage,
-			whitelist: ['exampleReducer'],
+			whitelist: ['auth'],
 		},
 		rootReducer
 	);
