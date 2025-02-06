@@ -56,7 +56,7 @@ export default function Login(props) {
 
 	return (
 		<>
-			<Loading isLoading={loading} />
+			<Loading isLoading={isLoading} />
 			<h1>Login</h1>
 
 			<Form onSubmit={handleSubmit}>
